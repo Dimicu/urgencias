@@ -9,61 +9,84 @@
 </head>
 
 <body>
-    <form action="">
-        <div class="datos">
-            <input type="text" value="Diego" placeholder="Nombre" id="nom">
-            <input type="text" value="Miras" placeholder="Apellidos" id="ape">
-            <input type="text" value="31" placeholder="Edad" id="anos">
-            <input type="datetime-local" value="2018-06-12T19:30" id="fecha">
+    <header>
+        <nav>
+            <div class="logo">
+                <span>
+
+                </span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Inicio</li>
+                    <li>Inicio</li>
+                    <li>Inicio</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="margen">
+        <div class="espacio-form">
+            <form action="">
+                <div class="datos">
+                    <h1>Inserte Datos de Paciente</h1>
+                    <input type="text" value="Diego" placeholder="Nombre" id="nom">
+                    <input type="text" value="Miras" placeholder="Apellidos" id="ape">
+                    <input type="text" value="31" placeholder="Edad" id="anos">
+                    <input type="datetime-local" value="2018-06-12T19:30" id="fecha">
+
+                </div>
+            </form>
+            <div class="prioridad">
+
+                <div>
+                    <label for="cabeza">Cabeza</label>
+                    <input type="checkbox" name="" id="cabeza">
+                </div>
+                <div>
+                    <label for="corazon">Corazon</label>
+                    <input type="checkbox" name="" id="corazon">
+                </div>
+                <div>
+                    <label for="tronco">Tronco</label>
+                    <input type="checkbox" name="" id="tronco">
+                </div>
+                <div>
+                    <label for="tronco">Abdomen</label>
+                    <input type="checkbox" name="" id="abdomen">
+                </div>
+                <div>
+                    <label for="tronco">Pelvis</label>
+                    <input type="checkbox" name="" id="pelvis">
+                </div>
+                <div>
+                    <label for="tronco">Brazos</label>
+                    <input type="checkbox" name="" id="brazos">
+                </div>
+                <div>
+                    <label for="tronco">Piernas</label>
+                    <input type="checkbox" name="" id="piernas">
+                </div>
+            </div>
 
         </div>
-        <div class="prioridad">
-            <div>
-                <label for="cabeza">Cabeza</label>
-                <input type="checkbox" name="" id="cabeza">
-            </div>
-            <div>
-                <label for="corazon">Corazon</label>
-                <input type="checkbox" name="" id="corazon">
-            </div>
-            <div>
-                <label for="tronco">Tronco</label>
-                <input type="checkbox" name="" id="tronco">
-            </div>
-            <div>
-                <label for="tronco">Abdomen</label>
-                <input type="checkbox" name="" id="abdomen">
-            </div>
-            <div>
-                <label for="tronco">Pelvis</label>
-                <input type="checkbox" name="" id="pelvis">
-            </div>
-            <div>
-                <label for="tronco">Brazos</label>
-                <input type="checkbox" name="" id="brazos">
-            </div>
-            <div>
-                <label for="tronco">Piernas</label>
-                <input type="checkbox" name="" id="piernas">
-            </div>
+        <div class="botones">
+            <button onclick="crearPaciente()">Agregar Paciente</button>
+            <!--<button onclick="ordenarListaUx()">Ordenar Lista</button>-->
+            <button onclick="mostrarListaUx();actualizarLista()">Mostrar Lista</button>
+            <button onclick="mostrarTablaUx(); actualizarTabla()">Mostrar tabla</button>
+            <button onclick="parar()">STOP</button>
         </div>
+        <div class="resultados">
+            <div>
+                <ul id="listaPac">
 
-    </form>
-    <div class="botones">
-        <button onclick="crearPaciente()">Agregar Paciente</button>
-        <!--<button onclick="ordenarListaUx()">Ordenar Lista</button>-->
-        <button onclick="mostrarListaUx();actualizarLista()">Mostrar Lista</button>
-        <button onclick="mostrarTablaUx(); actualizarTabla()">Mostrar tabla</button>
-        <button onclick="parar()">STOP</button>
-    </div>
-    <div class="resultados">
-        <div>
-            <ul id="listaPac">
+                </ul>
+            </div>
+            <div id="espacioTabla">
 
-            </ul>
-        </div>
-        <div id="espacioTabla">
-
+            </div>
         </div>
     </div>
 </body>
