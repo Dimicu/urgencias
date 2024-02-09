@@ -17,28 +17,36 @@ let listaUx = [];
 
 function crearPaciente() {
     let nom = document.getElementById("nom").value;
+    let nomDefec = "Diego";
     let ape = document.getElementById("ape").value;
+    let apeDefe = "Miras Curras";
     let anos = document.getElementById("anos").value;
+    let anosDefe = 31;
     let fech = document.getElementById("fecha").value;
+    let fechaAHora = new Date();
+    let fechaString = fechaAHora.toLocaleString("es-ES");
+
     let prio = calcularPrioridad();
 
-    let paciente = new Paciente(nom, ape, anos, fech, prio);
+    let paciente = new Paciente(nom || nomDefec, ape || apeDefe, anos || anosDefe, fech || fechaString, prio);
     listaUx.push(paciente);
 }
 
 function calcularPrioridad() {
     let cabeza = document.getElementById("cabeza");
     let corazon = document.getElementById("corazon");
-    let tronco = document.getElementById("tronco");
+    let torax = document.getElementById("torax");
+    let abdomen = document.getElementById("abdomen");
+    let pelvis = document.getElementById("pelvis");
     let brazos = document.getElementById("brazos");
     let piernas = document.getElementById("piernas");
 
-    let lesiones = [cabeza.checked, corazon.checked, tronco.checked, brazos.checked, piernas.checked]; //Visto en internet, checkbox.value y checked
+    let lesiones = [cabeza.checked, corazon.checked, torax.checked, abdomen.checked, pelvis.checked, brazos.checked, piernas.checked]; //Visto en internet, checkbox.value y checked
     let prioridad = 0;
     let i = 12;
 
     lesiones.map((element) => {
-        i = i - 2;
+        i = i - 1;
         if (element) { prioridad = prioridad + i };
 
     })
@@ -70,10 +78,10 @@ function parar() {
 
 
 function subirPrio() {
-   
+
 }
 function bajarPrio() {
-   
+
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------ */
 function mostrarListaUx() {

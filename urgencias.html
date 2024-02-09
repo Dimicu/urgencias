@@ -31,42 +31,56 @@
             <form action="">
                 <div class="datos">
                     <h1>Inserte Datos de Paciente</h1>
-                    <input type="text" value="Diego" placeholder="Nombre" id="nom">
-                    <input type="text" value="Miras" placeholder="Apellidos" id="ape">
-                    <input type="text" value="31" placeholder="Edad" id="anos">
-                    <input type="datetime-local" value="2018-06-12T19:30" id="fecha">
+                    <input type="text" placeholder="Nombre" id="nom">
+                    <input type="text" placeholder="Apellidos" id="ape">
+                    <input type="text" placeholder="Edad" id="anos">
+                    <input type="datetime-local" id="fecha">
 
                 </div>
             </form>
             <div class="prioridad">
 
                 <div>
-                    <label for="cabeza">Cabeza</label>
-                    <input type="checkbox" name="" id="cabeza">
+                    <label for="cabeza">Cabeza
+                        <input type="checkbox" name="" id="cabeza">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="corazon">Corazon</label>
-                    <input type="checkbox" name="" id="corazon">
+                    <label for="corazon">Corazón
+                        <input type="checkbox" name="" id="corazon">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="tronco">Tronco</label>
-                    <input type="checkbox" name="" id="tronco">
+                    <label for="tronco">Tórax
+                        <input type="checkbox" name="" id="torax">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="tronco">Abdomen</label>
-                    <input type="checkbox" name="" id="abdomen">
+                    <label for="tronco">Abdomen
+                        <input type="checkbox" name="" id="abdomen">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="tronco">Pelvis</label>
-                    <input type="checkbox" name="" id="pelvis">
+                    <label for="tronco">Pelvis
+                        <input type="checkbox" name="" id="pelvis">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="tronco">Brazos</label>
-                    <input type="checkbox" name="" id="brazos">
+                    <label for="tronco">M.Superior
+                        <input type="checkbox" name="" id="brazos">
+                    </label>
+
                 </div>
                 <div>
-                    <label for="tronco">Piernas</label>
-                    <input type="checkbox" name="" id="piernas">
+                    <label for="tronco">M.Inferior
+                        <input type="checkbox" name="" id="piernas">
+                    </label>
+
                 </div>
             </div>
 
@@ -79,7 +93,7 @@
             <button onclick="parar()">STOP</button>
         </div>
         <div class="resultados">
-            <div>
+            <div class="espacioLista">
                 <ul id="listaPac">
 
                 </ul>
