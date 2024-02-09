@@ -78,10 +78,10 @@ function parar() {
 
 
 function subirPrio() {
-
+//Me falto esto por implementar, nose como coger el valor del array una vez pintado con el boton
 }
 function bajarPrio() {
-
+//Me falto esto por implementar, nose como coger el valor del array una vez pintado con el boton
 }
 /*------------------------------------------------------------------------------------------------------------------------------------------ */
 function mostrarListaUx() {
